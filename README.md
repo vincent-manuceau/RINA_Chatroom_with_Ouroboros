@@ -1,5 +1,7 @@
 # Recursive_InternetWork_Chatroom_with_Ouroboros
-About a RINA Chatroom based upon Ouroboros implementation (ouroboros.rocks)
+About a RINA Chatroom based upon [Ouroboros](https://ouroboros.rocks) implementation
+
+###### Work in progres !!!
 
 -> Assuming server and clients are linked over Ethernet
 -> Assuming ethernet card name is br0 for server / clients
