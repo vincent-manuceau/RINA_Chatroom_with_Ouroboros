@@ -19,11 +19,11 @@ void * receiveMessage(void * flow_fd) {
 
 
  for (;;) {
- 	fd = flow_alloc("ochat", NULL, NULL);
+/* 	fd = flow_alloc("ochat", NULL, NULL);
   if (fd < 0) {
           printf("Failed to allocate flow.\n");
           return -1;
-  }
+  }*/
 
  	count = flow_read(fd, buf, BUF_SIZE);
   if (count < 0) {
