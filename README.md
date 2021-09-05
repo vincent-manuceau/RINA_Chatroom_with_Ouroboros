@@ -9,23 +9,42 @@ About a RINA Chatroom based upon [Ouroboros](https://ouroboros.rocks) implementa
 ```
  gcc -louroboros-dev -pthread client.c -o ochat_client
  gcc -louroboros-dev -pthread server.c -o ochat_server
+```
 
 
-Server side :
-./bootstrap_server.sh
 
+## Ouroboros over Ethernet version :
+```
+- Server side :
+./bootstrap_server.sh br0
 
-Client side : 
-./bootstrap_client.sh
+- Client side : 
+./bootstrap_client.sh br0
 
-
-Server side :
+- Server side :
 ./connect.sh
 ./ochat_server
 
-
-Client side :
+- Client side :
 ./ochat_client
 ```
+
+## Ouroboros over UDP version :
+```
+- Server side :
+./bootstrap_udp_server.sh br0
+
+- Client side :
+./bootstrap_udp_client.sh br0
+
+- Server side :
+./connect.sh
+./ochat_server
+
+- Client side :
+./ochat_client
+```
+
+
 
 Made with love with [Ouroboros](https://ouroboros.rocks)
